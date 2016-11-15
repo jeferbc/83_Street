@@ -970,6 +970,17 @@ body {
   font-size: 14px;
   line-height: 1.75em;
 }
+header{
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
 .boxed {
   background-color: #fff;
 }
@@ -3420,6 +3431,7 @@ a.thumbnail.active {
 /* ---------------------------------------------------- */
 /* Navbar */
 /* ---------------------------------------------------- */
+
 .navbar-default {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.75);
@@ -3443,6 +3455,12 @@ a.thumbnail.active {
   background-repeat: no-repeat;
   padding-left: 45px;
   color: #000;
+}
+.navbar-default.navbar-inverse .navbar-nav > li > a{
+  background-color: white;
+  color: black;
+  margin-top: 120px;
+
 }
 @media (min-width: 360px) and (max-width: 768px) {
   .navbar-default .navbar-brand {
@@ -3474,16 +3492,33 @@ a.thumbnail.active {
   /*Navbar Collapse*/
   .navbar-collapse {
     padding: 0;
+    margin-top: 0px;
   }
   /*Navbar*/
+  .navbar-block{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+  }
+  .social-menu{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .navbar-default .navbar-nav > li > a {
-    padding-top: 16px;
-    padding-bottom: 15px;
-    margin-top: -1px;
+    padding: 9px 70px;
+    margin-top: 110px;
     color: #000;
-    font-family: "Lato";
-    font-size: 16px;
+    font-family: 'Oswald', sans-serif;;
+    font-size: 25px;
     font-weight: 400;
+    margin: 1px;
+
+
 
   }
   .navbar-default .navbar-nav > li.dropdown > a {
@@ -6096,6 +6131,14 @@ a.feature-icon:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+
+  width:77%;
+  }
 
 .top-nav {
   float: right;
@@ -6512,14 +6555,7 @@ a.feature-icon:hover {
   background-image: none;
   color: #fff;
 }
-.navbar-default.navbar-inverse .navbar-nav > li > a,
-.navbar-default.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-default.navbar-inverse .navbar-nav > li > a:focus,
-.navbar-default.navbar-inverse .navbar-nav > .active > a,
-.navbar-default.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-default.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #fff;
-}
+
 .navbar-default.navbar-inverse .navbar-nav > li > a:hover,
 .navbar-default.navbar-inverse .navbar-nav > li > a:focus,
 .navbar-default.navbar-inverse .navbar-nav > .active > a,
@@ -6527,15 +6563,11 @@ a.feature-icon:hover {
 .navbar-default.navbar-inverse .navbar-nav > .active > a:focus .navbar-default.navbar-inverse .navbar-nav > .open > a,
 .navbar-default.navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-default.navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: red;
+  background-color: #BC1624;
   background-image: none;
-  color: #fff;
+
 }
-.navbar-default.navbar-inverse .navbar-nav > li > a{
-  background-color: white;
-  color: black;
-  margin-top: 100px;
-}
+
 .navbar-default.navbar-inverse + .main-header {
   background-color: #f1f1f1;
   border-bottom: solid 1px #ddd;

@@ -22,20 +22,20 @@
     <link href="css/lightbox.css" rel="stylesheet" media="screen">
     <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="css/style_83_street.css" media="screen" title="no title">
-
+    <link rel="stylesheet" href="css/style-gray.css" media="screen" title="no title">
     <link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
     <link href="css/buttons.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
 
 
 </head>
 <body>
-<header id="header-full-top" class="header-full">
-  <nav class="navbar navbar-static-top navbar-default navbar-inverse" role="navigation" id="header">
-    <div class="container">
-      <div class="header-logo">
-        <div class="header-full-title">
-            <h1 class="animated fadeInRight"><a href="index.html" class="active"><span></span></a></h1>
+<header>
+  <nav class="navbar navbar-static-top navbar-inverse navbar-default" role="navigation" id="header">
+    <div class="nav-responsive">
+      <div class="container">
+        <div class="logo">
         </div>
         <!-- Brand and toggle get grouped for better mobile display, Left NavBar -->
         <div class="navbar-header">
@@ -45,14 +45,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar hidden-lg hidden-md hidden-sm" ></a>
         </div> <!-- navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="javascript:void(0);">Home</a></li>
-            <li><a href="javascript:void(0);">Nosotros</a></li>
-            <li><a href="javascript:void(0);">Menú</a></li>
-            <li><a href="javascript:void(0);">Contacto</a></li>
+            <li class = "button-responsive"><a href="javascript:void(0);" >Home </a></li>
+            <li class = "button-responsive"><a href="javascript:void(0);" >Nosotros</a></li>
+            <li class = "button-responsive"><a href="javascript:void(0);" >Menú</a></li>
+            <li class = "button-responsive"><a href="javascript:void(0);" >Contacto</a></li>
           </ul>
         </div><!-- navbar-collapse -->
       </div>
@@ -60,132 +59,82 @@
   </nav>
 </header> <!-- header-full -->
 
-
-
-<section class="carousel-section">
-    <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-7">
-                            <div class="carousel-caption">
-                                <div class="carousel-text">
-                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">A template, infinite possibilities</h1>
-                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">We give you everything done, except the coffee</h2>
-                                   <ul class="list-unstyled carousel-list">
-                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Built with Bootstrap</li>
-                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>HTML5 and CSS3</li>
-                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Responsive Template</li>
-                                   </ul>
-                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-5 hidden-xs carousel-img-wrap">
-                            <div class="carousel-img">
-                                <img src="img/demo/pre.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-8">
-                            <div class="carousel-caption">
-                                <div class="carousel-text">
-                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Customization extremes</h1>
-                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Configure your own template in few easy steps</h2>
-                                   <ul class="list-unstyled carousel-list">
-                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>25 default colors</li>
-                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>Variables less for all colors</li>
-                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Full width and boxed mode</li>
-                                   </ul>
-                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-4 hidden-xs carousel-img-wrap">
-                            <div class="carousel-img">
-                                <img src="img/demo/pre2.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-7 col-sm-9">
-                            <div class="carousel-caption">
-                                <div class="carousel-text">
-                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Templates for almost everything</h1>
-                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Artificial Reason include over 80 HTML templates</h2>
-                                   <ul class="list-unstyled carousel-list">
-                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>84 HTML Templates</li>
-                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>More than 50 components</li>
-                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Extra CSS classes</li>
-                                   </ul>
-                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-5 col-sm-3 hidden-xs carousel-img-wrap">
-                            <div class="carousel-img">
-                                <img src="img/demo/pre3.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+<section id = "home">
+  <div id="carousel-example-captions" class="carousel carousel-images slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+      <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="http://fakeimg.pl/1270x750/" alt="First slide image">
+      </div>
+      <div class="item">
+        <img src="http://fakeimg.pl/1270x750/" alt="Second slide image">
+      </div>
+      <div class="item">
+        <img src="http://fakeimg.pl/1270x750/" alt="Third slide image">
+      </div>
     </div>
+    <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
 </section> <!-- carousel -->
 
+<section id = "nosotros">
+  <div class="content-box box-default">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="img/demo/w3.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-4">
+          <h4 class="content-box-title">Lorem ipsum dolor sit amet</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="menu">
+
+</section>
+<section id="contacto">
+    
+</section>
 
 <footer id="footer">
     <p>&copy; 2014 <a href="#">Artificial Reason</a>, inc. All rights reserved.</p>
 </footer>
-<!-- Scripts -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.cookie.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-switch.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/slidebars.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script src="js/holder.js"></script>
-<script src="js/buttons.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/jquery.mixitup.min.js"></script>
-<script src="js/circles.min.js"></script>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-switch.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/slidebars.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/holder.js"></script>
+  <script src="js/buttons.js"></script>
+  <script src="js/styleswitcher.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/circles.min.js"></script>
 
-<!-- Syntaxhighlighter -->
-<script src="js/syntaxhighlighter/shCore.js"></script>
-<script src="js/syntaxhighlighter/shBrushXml.js"></script>
-<script src="js/syntaxhighlighter/shBrushJScript.js"></script>
-
-<script src="js/app.js"></script>
-<script src="js/index.js"></script>
-
+  <!-- Syntaxhighlighter -->
+  <script src="js/syntaxhighlighter/shCore.js"></script>
+  <script src="js/syntaxhighlighter/shBrushXml.js"></script>
+  <script src="js/syntaxhighlighter/shBrushJScript.js"></script>
+  <script src="js/app.js"></script>  <script src="js/index.js"></script>
 </body>
-
 </html>
