@@ -10,6 +10,7 @@ body {
   background: #3d3d3b;
   border-right: none;
   display: block;
+  position: fixed;
 }
 div ul {
   overflow: hidden;
@@ -124,6 +125,9 @@ div ul {
     -ms-transition: all .25s ease;
     -o-transition: all .25s ease;
     transition: all .25s ease;
+}
+.active {
+  background: #BC1624;
 }
 
 /*Home*/
