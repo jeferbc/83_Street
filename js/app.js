@@ -75,11 +75,11 @@ $("[name='full-width-checkbox']").bootstrapSwitch();
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
 
-  $('nav a[href^="#"]').on('click', function (e) {
+  $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
 
-    $('nav a').each(function () {
+    $('a').each(function () {
       $(this).removeClass('active');
     })
     $(this).addClass('active');
@@ -97,11 +97,11 @@ $(document).ready(function () {
 
 function onScroll(event){
   var scrollPosition = $(document).scrollTop();
-  $('nav a').each(function () {
+  $('a').each(function () {
     var currentLink = $(this);
     var refElement = $(currentLink.attr("href"));
     if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-      $('nav a').removeClass("active");
+      $('a').removeClass("active");
       currentLink.addClass("active");
     }
     else{
