@@ -69,17 +69,17 @@ jQuery(document).ready(function() { // makes sure the whole site is loaded
 })
 
 
-// full-width-checkbox
+// // full-width-checkbox
 $("[name='full-width-checkbox']").bootstrapSwitch();
 
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
 
-  $('a[href^="#"]').on('click', function (e) {
+  $('nav a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
 
-    $('a').each(function () {
+    $('nav a').each(function () {
       $(this).removeClass('active');
     })
     $(this).addClass('active');
@@ -87,7 +87,7 @@ $(document).ready(function () {
     var target = this.hash;
     $target = $(target);
     $('html, body').stop().animate({
-      'scrollTop': $target.offset().top+2
+      'scrollTop': $target.offset().top-125
     }, 500, 'swing', function () {
       window.location.hash = target;
       $(document).on("scroll", onScroll);
@@ -97,15 +97,15 @@ $(document).ready(function () {
 
 function onScroll(event){
   var scrollPosition = $(document).scrollTop();
-  $('a').each(function () {
+  $('nav a').each(function () {
     var currentLink = $(this);
     var refElement = $(currentLink.attr("href"));
-    if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-      $('a').removeClass("active");
-      currentLink.addClass("active");
-    }
-    else{
-      currentLink.removeClass("active");
-    }
+
   });
 }
+
+// $('body').scrollspy({ target: '#navbar-example' })
+//
+// $('[data-spy="scroll"]').each(function (data-offset="30") {
+//   var $spy = $(this).scrollspy('refresh')
+// })

@@ -26,41 +26,42 @@
     <link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
     <link href="css/buttons.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="127">
 <header>
-  <nav class="navbar navbar-static-top navbar-inverse navbar-default" role="navigation" id="header">
-    <div class="nav-responsive">
-      <div class="container">
-        <div class="logo">
-        </div>
-        <!-- Brand and toggle get grouped for better mobile display, Left NavBar -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div> <!-- navbar-header -->
-        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class = "button-responsive"><a href="#home" class="active">Home </a></li>
-            <li class = "button-responsive"><a href="#nosotros">Nosotros</a></li>
-            <li class = "button-responsive"><a href="#menu">Menú</a></li>
-            <li class = "button-responsive"><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div><!-- navbar-collapse -->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="logo"></div>
       </div>
-    </div>
-    <div class="slidebar-social-icons">
-      <a href="#" class="social-icon-ar facebook round"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="social-icon-ar instagram round"><i class="fa fa-instagram"></i></a>
-      <a href="#" class="social-icon-ar twitter round"><i class="fa fa-twitter"></i></a>
-    </div>
+      <nav class="top-nav">
+            <ul class="top-nav-social hidden-xs">
+                <li><a href="#" class="animated fadeIn animation-delay-7 twitter circle"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="animated fadeIn animation-delay-8 facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="animated fadeIn animation-delay-9 instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" role="tablist">
+          <li><a href="#home">Home<span class="sr-only"></span></a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
 </header> <!-- header-full -->
 
@@ -73,13 +74,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <img src="http://fakeimg.pl/1270x750/" alt="First slide image">
+        <img src="img/hamburguesa1.jpg" alt="First slide image">
       </div>
       <div class="item">
-        <img src="http://fakeimg.pl/1270x750/" alt="Second slide image">
+        <img src="img/hamburguesa1.jpg" alt="Second slide image">
       </div>
       <div class="item">
-        <img src="http://fakeimg.pl/1270x750/" alt="Third slide image">
+        <img src="img/hamburguesa1.jpg" alt="Third slide image">
       </div>
     </div>
     <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
@@ -105,8 +106,6 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias similique rem quos suscipit nemo ipsum assumenda ut est inventore.
           </p>
         </div>
       </div>
@@ -114,13 +113,91 @@
   </div>
 </section>
 <section id="menu">
-
+  <div class="container">
+    <h2 class="text-center">Menú</h2>
+    <div class="row">
+      <div class="panel-group" id="accordion5">
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-link">
+              <a data-toggle="collapse" data-parent="#accordion5" href="#c1"><img src="img/hamburguer1.jpg" alt="1" /></a>
+            </div>
+            <div id="c1" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-link">
+              <a data-toggle="collapse" data-parent="#accordion5" href="#c2"><img src="img/hamburguer1.jpg" alt="1" /></a>
+            </div>
+            <div id="c2" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-link">
+              <a data-toggle="collapse" data-parent="#accordion5" href="#c3"><img src="img/hamburguer1.jpg" alt="1" /></a>
+            </div>
+            <div id="c3" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-link">
+              <a data-toggle="collapse" data-parent="#accordion5" href="#c4"><img src="img/hamburguer1.jpg" alt="1" /></a>
+            </div>
+            <div id="c4" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-link">
+              <a data-toggle="collapse" data-parent="#accordion5" href="#c5"><img src="img/hamburguer1.jpg" alt="1" /></a>
+            </div>
+            <div id="c5" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-link">
+              <a data-toggle="collapse" data-parent="#accordion5" href="#c6"><img src="img/hamburguer1.jpg" alt="1" /></a>
+            </div>
+            <div id="c6" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section id="contacto">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <h2 class="section-title no-margin-top">DEJANOS TU OPINION</h2>
+          <h2 class="section-title no-margin-top text-center">DEJANOS TU OPINION</h2>
       </div>
         <div class="col-md-8">
           <section>
@@ -138,7 +215,7 @@
                 <label for="InputMessage">Mesagge</label>
                 <textarea class="form-control" id="InputMessage" rows="8"></textarea>
               </div>
-              <button type="submit" class="btn btn-ar btn-primary">Submit</button>
+              <button type="submit" class="btn btn-ar btn-primary">Enviar</button>
               <div class="clearfix"></div>
             </form>
           </section>
